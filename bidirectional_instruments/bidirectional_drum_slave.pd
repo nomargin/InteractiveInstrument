@@ -8,8 +8,8 @@
 #X obj 79 166 route analog;
 #X obj 79 198 route 0 1 2 3 4 5 6 7;
 #N canvas 0 22 450 300 (subpatch) 0;
-#X array snare 6276 float 2;
-#X coords 0 1 6276 -1 100 70 1 0 0;
+#X array snare 14545 float 2;
+#X coords 0 1 14545 -1 100 70 1 0 0;
 #X restore 369 38 graph;
 #X obj 252 194 soundfiler;
 #X obj 201 375 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -56,7 +56,7 @@
 #X obj 1174 564 *~ 0.7;
 #X obj 999 606 +~;
 #X obj 1070 558 r~ rawout;
-#X text 993 377 Delay;
+#X text 995 359 Delay;
 #X msg 731 551 clear;
 #X floatatom 784 499 5 1 500 0 cutoff_freq - -;
 #X floatatom 839 564 5 1 100 0 resonance - -;
@@ -64,7 +64,7 @@
 #X obj 784 530 * 100;
 #X obj 737 670 output~;
 #X obj 737 606 bp~ 500 1;
-#X text 564 605 BandPass Filter;
+#X text 730 454 BandPass Filter;
 #X msg 113 38 6;
 #X msg 351 130 read -resize wav/snare.wav snare;
 #X obj 333 272 OSCroute /v1 /v2;
@@ -100,7 +100,7 @@
 #X text 572 2 comment;
 #X text 517 2 Leap_Output;
 #X obj 280 128 r lb;
-#X text 1034 398;
+#X text 1034 398 comment;
 #X obj 1034 396 r lb;
 #X connect 0 0 1 0;
 #X connect 1 0 6 0;
